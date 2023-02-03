@@ -1,0 +1,17 @@
+{
+    "name": "evdigi/generalhelper",
+    "description": "Kumpulan function general",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Evdigi\\Generalhelper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Evdigi"
+        }
+    ],
+    "require": {}
+}
