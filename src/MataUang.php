@@ -14,10 +14,10 @@ class MataUang
      * @param array $data
      * @return integer
      */
-    public static function rupiah($angka, decimals=2);
+    public static function rupiah($angka, $decimals = 2)
     {
         if($decimals < 0) {
-            $decimals = 0
+            $decimals = 0;
         }
 
         $hasil_rupiah = "Rp " . number_format($angka, $decimals, ',', '.');
