@@ -1,17 +1,40 @@
 {
-    "name": "evdigi/generalhelper",
-    "description": "Kumpulan function general",
+    "name": "evdigiina/general-helper",
+    "description": "Kumpulan function general yang (mungkin) sering digunakan",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "package",
+        "laravel",
+        "helper",
+        "evidigiina"
+    ],
     "autoload": {
         "psr-4": {
-            "Evdigi\\Generalhelper\\": "src/"
-        }
+            "EvdigiIna\\GeneralHelper\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
     },
     "authors": [
         {
-            "name": "Evdigi"
+            "name": "Evdigi",
+            "homepage": "https://github.com/Evdigi-INA"
         }
     ],
-    "require": {}
+    "require": {},
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EvdigiIna\\GeneralHelper\\Providers\\GeneralHelperServiceProvider"
+            ]
+        }
+    }
 }
